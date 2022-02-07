@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: burlywood;
   color: #fff;
   position: relative;
   background: transparent;
@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/140303_jeeves-privacy-1.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -32,6 +32,11 @@ body::before {
   }
 }
 
+@media (min-width: 992px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
 a {
   color: #18d26e;
   text-decoration: none;
